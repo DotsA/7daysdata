@@ -1,0 +1,90 @@
+/* Apply a natural box layout model to all elements, but allowing components to change
+   https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+
+/* Basic page styles */
+
+html {
+  font-family: sans-serif;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+
+/* Flexbox styles */
+
+.flex-container {
+  display: flex;
+  /* This line tells your browser the the flex items should wrap to the
+     next line when sizing them with percentage based widths. */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+
+
+/* The flexible column class contains styles shared between each column size */
+.col {
+  /* Add padding to create gutters between your grid columns */
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 5%;
+  margin: 10%;
+  box-sizing: border-box;
+  /* The background color is just to help visualize the grid */
+  outline: 20px dashed 	#FF7F50	;
+  background-color: 	#FF7F50	;
+  margin-bottom: 10px;
+}
+
+/* Define a series of classes that correspond to units of your grid.
+   Here, col-1 represents one unit in your grid.
+   The column width is calculated by dividing 100% by the number of columns in your grid.  */
+.col-1 {
+  width: 25%;
+  font-size: 60%;
+  font-family: ;
+  font-family:
+}
+.col-2 {
+  width: 30%;
+  font-size: 1vw;
+  font-family: 'Oswald', sans-serif;
+
+
+}
+.col-3 {
+  width: 40%;
+  font-family: courier;
+  font-size: 30%;
+}
+.col-4 {
+  width: 14%;
+  font-size: 20%;
+}
+
+.col-5 {
+  width: 30%;
+}
+
+.col-6 {
+  width: 40%;
+}
+
+.col-7 {
+  width: 20%;
+}

@@ -1,0 +1,31 @@
+/* Fixed sidebar example */
+
+body {
+  padding: 0;
+}
+
+.sidebar,
+.content-area {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.content-area {
+  /* Offset the content area by the width of the sidebar */
+  margin-left: 150%;
+}
+
+.col-3 {
+  width: 25%;
+  margin-left: 5%;
+}
+
+.col-9 {
+  width: 100%;
+}

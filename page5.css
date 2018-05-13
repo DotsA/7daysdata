@@ -1,0 +1,29 @@
+/* Centered content example */
+
+body {
+  padding: 20%;
+  background-color: pink;
+}
+
+.col {
+  margin-bottom: 0;
+  padding:30%;
+  color: white;
+  font-size: 50%;
+  border-top: 10px dotted;
+  border-radius: 10%;
+}
+
+.full-viewport-container,
+.full-viewport-container .flex-container {
+  /* Set the minimum height using vh units, or "viewport height". 100 vh means 100% of the viewport's height. */
+  min-height: 100vh;
+}
+
+.align-top {
+  align-self: flex-start;
+}
+
+.align-bottom {
+  align-self: flex-end;
+}

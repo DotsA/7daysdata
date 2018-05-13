@@ -1,0 +1,84 @@
+/* Fixed sidebar example */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  color: black;
+  font-family: courier;
+  font-style: bold;
+}
+
+h3 {
+  padding: 10%;
+  font-family: impact;
+  font-size: 500%;
+  color: white;
+  background-color: #DAA520;
+
+}
+
+ul2 {
+  font-size: 100%;
+  font-family: times;
+
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.col1 {
+  padding: 5%;
+  background: #DAA520;
+  height: 50%;
+  z-index: 4;
+}
+
+.col2{
+  padding: 8%;
+  background: 	#FFD700;
+  height: 30%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.sidebar,
+.content-area {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: pink;
+  padding: 2%;
+}
+
+.content-area {
+  /* Offset the content area by the width of the sidebar */
+  margin-left: 110%;
+  width: 200%;
+  padding: 10%;
+  outline: solid;
+  outline-color: pink;
+  outline-width: 20%;
+}
